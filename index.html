@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form>
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" placeholder="Enter latitude...">
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" placeholder="Enter longitude...">
+            <button type="button" onclick="getWeatherXMLHTTPRequest()">Get Weather (XMLHTTPRequest)</button>
+            <button type="button" onclick="getWeatherFetchPromises()">Get Weather (Fetch with Promises)</button>
+            <button type="button" onclick="getWeatherFetchAsyncAwait()">Get Weather (Fetch with Async/Await)</button>
+        </form>
+        <div class="weather" id="weather"> 
+            <i class="weather-icon" id="weather-icon">
+                <img id="weather-icon-img" src="" alt="Weather Icon">
+            </i>
+            <p class="weather-description" id="weather-description"></p>
+            <p class="weather-temperature" id="weather-temperature"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+    
